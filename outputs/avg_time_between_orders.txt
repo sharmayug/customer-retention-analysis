@@ -1,0 +1,3 @@
+"avgdaysbetweenorders"
+
+       48.27
