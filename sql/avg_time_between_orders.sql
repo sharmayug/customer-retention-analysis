@@ -1,6 +1,6 @@
 -- Step 5: Average Time Between Orders
 -- Calculates average days between consecutive orders
--- Output: ~48.27 days (replace with your actual value)
+-- Output: ~48.27 days
 WITH OrderGaps AS (
     SELECT 
         CustomerID,
