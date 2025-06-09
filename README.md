@@ -62,7 +62,7 @@ To prepare the dataset for analysis:
 - **Order Frequency**: Line graph showing average days between orders over time.  
   ![Line Graph](visualizations/order_frequency_line.png)
 
-The visualizations were generated using [Visualizations.py](Visualizations.py), which relies on `cohort_table.csv` and `monthly_order_gaps.csv` (available in the root directory).
+The visualizations were generated using Python (`pandas`, `matplotlib`, `seaborn`) with data from `cohort_table.csv` and `monthly_order_gaps.csv`, available in the root directory.
 
 ## Conclusion
 **Key Findings**:
@@ -77,14 +77,14 @@ The visualizations were generated using [Visualizations.py](Visualizations.py), 
 
 ## How to Run the Project
 1. Download the [Online Retail II UCI dataset](https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci).
-2. Load the CSV into pgAdmin or SQLite using [DB Browser for SQLite].
+2. Load the CSV into pgAdmin or SQLite using [DB Browser for SQLite](https://sqlitebrowser.org/).
 3. Run SQL scripts in order:
    - [data_cleaning.sql](sql/data_cleaning.sql)
    - [repeat_purchase_rate.sql](sql/repeat_purchase_rate.sql)
    - [cohort_retention.sql](sql/cohort_retention.sql)
    - [avg_time_between_orders.sql](sql/avg_time_between_orders.sql)
 4. Export the results of `cohort_retention.sql` as `cohort_table.csv` and `avg_time_between_orders.sql` as `monthly_order_gaps.csv`.
-5. Generate visualizations using [Visualizations.py](Visualizations.py) (requires Python with `pandas`, `matplotlib`, `seaborn`).
+5. Use a Python script with `pandas`, `matplotlib`, and `seaborn` to generate the visualizations (refer to the `visualizations` folder for the output PNGs).
 
 ## Future Improvements
 - Add product category analysis to identify high-retention items.
