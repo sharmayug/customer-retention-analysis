@@ -1,6 +1,6 @@
 -- Step 3: Repeat Purchase Rate
 -- Calculates percentage of customers with multiple orders
--- Output: ~65.57% (replace with your actual value)
+-- Output: ~65.57% 
 WITH PurchaseCounts AS (
     SELECT CustomerID, COUNT(DISTINCT InvoiceNo) AS PurchaseCount
     FROM online_retail_transactions
